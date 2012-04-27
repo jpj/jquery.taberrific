@@ -1,0 +1,61 @@
+/**
+ * Jquery Taberrific - Extremely specific tab handling
+ */
+
+ul.taberrific-parent {
+	position: relative;
+/*	width: 615px;*/
+}
+
+ul.taberrific-parent, ul.taberrific-parent ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.taberrific-parent > li {
+	float: left;
+}
+
+.taberrific-button {
+	display: block;
+}
+
+.taberrific-button:hover {
+	color: lightgray;
+}
+
+.taberrific-button.taberiffic-selected {
+	background-color: gray;
+}
+
+/* Child Config */
+li.taberrific-has-children {
+	position: relative;
+}
+
+li.taberrific-has-children > a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+li.taberrific-has-children > a > i {
+	display: inline-block;
+}
+
+li.taberrific-has-children > ul.taberrific-children {
+	display: none;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+/*	top: 41px;*/
+	z-index: 20;
+}
+
+li.taberrific-has-children:hover > ul.taberrific-children {
+	display: block;
+}
+
+ul.taberrific-children > li > a.taberrific-button {
+}
